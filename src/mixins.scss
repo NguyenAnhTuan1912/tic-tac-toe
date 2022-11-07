@@ -1,0 +1,12 @@
+@mixin flex-box($direction, $justify-content, $align-items) {
+    display: flex;
+    @if($direction != '') {
+        flex-direction: $direction;
+    }
+    @if($justify-content != '') {
+        justify-content: $justify-content;
+    }
+    @if($align-items != '') {
+        align-items: $align-items;
+    }
+}

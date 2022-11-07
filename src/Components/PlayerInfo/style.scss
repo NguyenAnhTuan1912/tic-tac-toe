@@ -1,0 +1,10 @@
+@use '../../mixins.scss';
+
+.player-name {
+    @include mixins.flex-box(column, center, center);
+}
+
+.turn-text {
+    font-weight: 700;
+    color: rgb(214, 51, 51);
+}

@@ -1,0 +1,31 @@
+@use '../../mixins.scss';
+
+.game {
+    width: 100%;
+    max-width: 480px;
+    min-width: 300px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.block-container {
+    display: grid;
+    width: 100%;
+    aspect-ratio: 1;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.game-status-message {
+    text-align: center;
+}
+
+.game-section {
+    @include mixins.flex-box('', space-between, center);
+    width: 100%;
+    max-width: 1080px;
+    min-width: 300px;
+    padding: 12px;
+  }
